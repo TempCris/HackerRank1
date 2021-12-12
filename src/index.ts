@@ -2,10 +2,14 @@
 
 // Source: https://www.hackerrank.com/challenges/simple-array-sum/problem?isFullScreen=true
 
-function simpleArraySum(ar: Array<number>): number {
-  let suma = 0;
-  ar.forEach((element) => suma += element);
-  return suma;
+function simpleArraySum(ar: number[]): number {
+  const longitud = ar.length
+  let sum = 0 
+  for(let index = 0 ; index < longitud ; index++){
+      const elemento = ar[index];   
+      sum = elemento + sum;  
+  }
+      return sum;
 }
 
 function main() {
